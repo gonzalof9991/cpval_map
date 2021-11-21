@@ -39,7 +39,7 @@ with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
  
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 REST_FRAMEWORK = {
 
@@ -116,12 +116,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
          # NOMBRE DE SU BASE DE DATOS
-        'NAME': 'd268bdr60emp86',
+        'NAME': 'd5rh2d4kac0a7l',
         # USUARIO DE SU BASE DE DATOS
-        'USER': 'ftnajltsitsbmv',
+        'USER': 'otyzjuhyaygtej',
         # CONTRASEÑA DE SU USUARIO
-        'PASSWORD': 'a06feb118a265e85d4bfe09f047cc299a1cfcdb3f8bfedc0bac73e5dde8e9cf2',
-        'HOST': 'ec2-52-204-72-14.compute-1.amazonaws.com',
+        'PASSWORD': 'e7cc3b3c1c447462d8246e3b508e62924ac386fd9d1e5811aeb2ef30ed127e05',
+        'HOST': 'ec2-3-91-127-228.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
@@ -171,7 +171,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,"static/")
 
 # HTTPS settings
 
-SESSION_COOKIE_SECURE = True
+""" SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
 
@@ -179,4 +179,4 @@ SECURE_SSL_REDIRECT = True
 
 SECURE_HSTS_SECONDS = 31536000 # 1 AÑO
 SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True  
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True   """

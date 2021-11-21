@@ -9,15 +9,15 @@ from django.contrib.gis.db import models
 
 
 class Propiedad(models.Model):
-    id = models.CharField(primary_key=True, verbose_name='id', max_length= 20000 ,default= '1')
+    id_prop = models.CharField(verbose_name='id', max_length= 20000 ,default= '1',editable=True)
     dormitorio = models.IntegerField(default=1, verbose_name= 'dormitorio')
     bano = models.IntegerField(default= 1 , verbose_name= 'baños')
     estacionamiento = models.IntegerField(default=1 ,verbose_name='Estacionamiento')
     comuna = models.IntegerField(default=1 ,verbose_name='Comuna')
     area_total = models.DecimalField(max_digits=8, decimal_places=2, verbose_name= 'Area total')
     area_construida = models.DecimalField(max_digits=8, decimal_places=2, verbose_name= 'Area construida')
-    longitude = models.DecimalField(verbose_name="Longitude", max_digits=10, decimal_places=8)
-    latitude = models.DecimalField(verbose_name="Latitude", max_digits=10, decimal_places=8)
+    longitude = models.DecimalField(verbose_name="Longitude", max_digits=25, decimal_places=18)
+    latitude = models.DecimalField(verbose_name="Latitude", max_digits=25, decimal_places=18)
     condicion = models.IntegerField(default= 1 , verbose_name= 'Condicion')
     resultado = models.CharField(default='3000',max_length= 3000 ,verbose_name='Precio tasado')
     
