@@ -11,7 +11,7 @@ from django.contrib.gis.admin import OSMGeoAdmin # Importa OSMGEOadmin
 class PropiedadResourse(resources.ModelResource):
     class Meta: 
         model = Propiedad
-        fields = ('id','dormitorio','bano','estacionamiento','comuna','area_total','area_construida','longitude','latitude','condicion','resultado')
+        fields = ('id_prop','dormitorio','bano','estacionamiento','comuna','area_total','area_construida','longitude','latitude','condicion','resultado')
 
 
 class AreaResource(resources.ModelResource):
@@ -39,7 +39,7 @@ class PropiedadAdmin(ImportExportModelAdmin,OSMGeoAdmin):
     default_lat = -3900984.09901
     default_lon = -7945309.20784
     default_zoom = 12
-    list_display = ('id', 'comuna', 'latitude','longitude')
+    list_display = ('id_prop', 'comuna', 'latitude','longitude')
     search_fields = ["id"]
     list_per_page = 30
     resource_class = PropiedadResourse

@@ -51,7 +51,7 @@ let feature = L.geoJSON(areas, { style: myStyle }).bindPopup(function(layer) { r
 
 // Api base de datos
 const getPropiedad = async() => {
-    var token = 'Token e408801235a469cef840684af3e3b5cab7b599bd';
+    var token = 'Token f41af1f72e984914c2c0574ab4494bc687e822c9';
     var myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');
     myHeaders.append('Authorization', token)
@@ -90,7 +90,7 @@ const traerDatos = async() => {
 // Marcar mapa con propiedades
 
 function marcarMapa(p) {
-
+    console.log(p);
     let prop = p // Trae la data de la api y la guarda en la variable prop
     let latitud = prop.map(x => { // Convierte la propiedad latitud (string) en Numero 
         let lt = Number(x.latitude)
@@ -113,9 +113,11 @@ function marcarMapa(p) {
         let areaC = prop[i].area_construida;
         // let tipoP = prop[i].tipo_propiedad;
         let condicion = prop[i].condicion;
-        let precioT = prop[i].resultado;
-        precioT = precioT.split('[')[1];
-        precioT = precioT.split(']')[0];
+        let precioT;
+        precioT = prop[i].resultado;
+        console.log(precioT);
+       /*  precioT = precioT.split('[')[1];
+        precioT = precioT.split(']')[0]; */
         Number(precioT);
         let precioCLP = 0;
 

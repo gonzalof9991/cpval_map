@@ -9,7 +9,7 @@ from django.contrib.gis.db import models
 
 
 class Propiedad(models.Model):
-    id = models.CharField(primary_key=True, verbose_name='id', max_length= 20000 ,default= '1')
+    id_prop = models.CharField(primary_key = True, verbose_name='id', max_length= 20000 ,default= '1')
     dormitorio = models.IntegerField(default=1, verbose_name= 'dormitorio')
     bano = models.IntegerField(default= 1 , verbose_name= 'baños')
     estacionamiento = models.IntegerField(default=1 ,verbose_name='Estacionamiento')

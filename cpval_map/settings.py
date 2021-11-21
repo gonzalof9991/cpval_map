@@ -73,7 +73,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Mis apps
-    'core',
+    'core.apps.CoreConfig',
     # api rest
     'rest_cpval_map'
 ]
@@ -116,12 +116,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
          # NOMBRE DE SU BASE DE DATOS
-        'NAME': 'd268bdr60emp86',
+        'NAME': 'd2nma4f43gk2ah',
         # USUARIO DE SU BASE DE DATOS
-        'USER': 'ftnajltsitsbmv',
+        'USER': 'oldnbpqiwvzsbo',
         # CONTRASEÑA DE SU USUARIO
-        'PASSWORD': 'a06feb118a265e85d4bfe09f047cc299a1cfcdb3f8bfedc0bac73e5dde8e9cf2',
-        'HOST': 'ec2-52-204-72-14.compute-1.amazonaws.com',
+        'PASSWORD': '0680b3fb99e860df5e3286f80df402316ee7f824ab07a284f91075b72db3826c',
+        'HOST': 'ec2-18-234-15-247.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
