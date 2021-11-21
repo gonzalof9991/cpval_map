@@ -48,7 +48,7 @@ REST_FRAMEWORK = {
     ],  
 }
 
-ALLOWED_HOSTS = ['cpvalmap.cl','www.cpvalmap.cl']
+ALLOWED_HOSTS = ['gonzalo99.pythonanywhere.com','localhost','127.0.0.1']
 
 
 # Application definition
