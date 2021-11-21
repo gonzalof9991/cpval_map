@@ -39,7 +39,7 @@ with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
  
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 REST_FRAMEWORK = {
 
@@ -171,7 +171,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,"static/")
 
 # HTTPS settings
 
-""" SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
 
@@ -179,4 +179,4 @@ SECURE_SSL_REDIRECT = True
 
 SECURE_HSTS_SECONDS = 31536000 # 1 AÑO
 SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True   """
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True   
