@@ -31,7 +31,7 @@ from .models import Area , Propiedad
 class AreaMapView(TemplateView):
     # Area map view.
 
-    template_name = "core/base.html"
+    template_name = "core/index.html"
 
     def get_context_data(self, **kwargs):
 

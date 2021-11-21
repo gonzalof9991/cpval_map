@@ -9,54 +9,20 @@
     .navbar {
         background: white;
     }
-    
-    nav a {
-        padding: 1rem;
-        margin: 1rem;
-        color: black;
-        transition: all 0.3s ease;
-    }
-    
-    .nav-link:hover {
-        color: #2F9964;
-        background-color: transparent;
-        border-radius: 3px;
-        border-bottom-style: solid;
-        border-bottom-color: #2F9964;
-        border-bottom-width: 5px;
-        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
-    }
     /* logo */
     
     .logo {
-        width: 90%;
+        width: 60%;
     }
-
-    .navbar-nav{
+    
+    .navbar-nav {
         padding-top: 6%;
         padding-left: 15%;
     }
-
-    
-
     /* Logo duoc  */
-    .img-duoc{
-        width: 102%;
-        
-    }
-    /* img carrusel */
     
-    .carousel-item img {
-        width: 100%;
-        height: 100%;
-        border-radius: 5rem;
-        padding: 2rem;
-        transition: all 0.8s ease;
-    }
-    
-    .carousel-item img:hover {
-        cursor: pointer;
-        width: 60%;
+    .img-duoc {
+        width: 90%;
     }
     /* Footer */
     
@@ -72,27 +38,23 @@
     }
     
     .img-footer {
-        width: 25%;
-        height: 10%;
+        width: 20%;
+        height: 12%;
         transition: all 0.3s ease;
+        margin: 6%;
     }
     
     .img-footer:hover {
-        cursor: pointer;
-        border-radius: 2rem;
+        border-radius: 1rem;
         box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-    }
-    
-    .mapa {
-        margin: 5rem;
-        border-radius: 2rem;
     }
     
     #map {
         width: 100%;
-        height: 500px;
-        border-radius: 2rem;
+        height: 35rem;
         transition: all 0.3s ease;
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
     
     #map:hover {
@@ -127,8 +89,8 @@
         padding-top: 15px;
     }
     
-    #carusel {
-        border-radius: 5 rem;
-        height: 100%;
-        width: 100%;
+    a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
     }

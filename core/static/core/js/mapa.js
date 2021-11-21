@@ -24,7 +24,7 @@ var myStyle = {
     "weight": 2,
     "opacity": 0.5
 };
-console.log(areas);
+
 // Recorre cada feature y en cada uno agrega un bindPopup (Mensaje de ventana)
 let feature = L.geoJSON(areas, { style: myStyle }).bindPopup(function(layer) { return `
     <h5><b>Informacion Zona</b></h5>
