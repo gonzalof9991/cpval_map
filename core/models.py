@@ -16,8 +16,8 @@ class Propiedad(models.Model):
     comuna = models.IntegerField(default=1 ,verbose_name='Comuna')
     area_total = models.DecimalField(max_digits=8, decimal_places=2, verbose_name= 'Area total')
     area_construida = models.DecimalField(max_digits=8, decimal_places=2, verbose_name= 'Area construida')
-    longitude = models.DecimalField(verbose_name="Longitude", max_digits=25, decimal_places=18)
-    latitude = models.DecimalField(verbose_name="Latitude", max_digits=25, decimal_places=18)
+    longitude = models.DecimalField(verbose_name="Longitude", max_digits=10, decimal_places=8)
+    latitude = models.DecimalField(verbose_name="Latitude", max_digits=10, decimal_places=8)
     condicion = models.IntegerField(default= 1 , verbose_name= 'Condicion')
     resultado = models.CharField(default='3000',max_length= 3000 ,verbose_name='Precio tasado')
     
