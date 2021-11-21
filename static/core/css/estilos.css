@@ -1,0 +1,134 @@
+    body {
+        font-family: 'Lora';
+        background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("https://www.duna.cl/media/2017/12/vi%C3%B1a-del-mar.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .navbar {
+        background: white;
+    }
+    
+    nav a {
+        padding: 1rem;
+        margin: 1rem;
+        color: black;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+        color: #2F9964;
+        background-color: transparent;
+        border-radius: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: #2F9964;
+        border-bottom-width: 5px;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+    /* logo */
+    
+    .logo {
+        width: 90%;
+    }
+
+    .navbar-nav{
+        padding-top: 6%;
+        padding-left: 15%;
+    }
+
+    
+
+    /* Logo duoc  */
+    .img-duoc{
+        width: 102%;
+        
+    }
+    /* img carrusel */
+    
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5rem;
+        padding: 2rem;
+        transition: all 0.8s ease;
+    }
+    
+    .carousel-item img:hover {
+        cursor: pointer;
+        width: 60%;
+    }
+    /* Footer */
+    
+    footer {
+        background-color: #3f2f37;
+        opacity: 0.9;
+        height: 100%;
+    }
+    
+    .container img {
+        margin: 2rem;
+        padding: 2rem;
+    }
+    
+    .img-footer {
+        width: 25%;
+        height: 10%;
+        transition: all 0.3s ease;
+    }
+    
+    .img-footer:hover {
+        cursor: pointer;
+        border-radius: 2rem;
+        box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+    
+    .mapa {
+        margin: 5rem;
+        border-radius: 2rem;
+    }
+    
+    #map {
+        width: 100%;
+        height: 500px;
+        border-radius: 2rem;
+        transition: all 0.3s ease;
+    }
+    
+    #map:hover {
+        box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+    
+    .titulo-ventana {
+        text-align: center;
+        font-size: 28px;
+        color: #00449d;
+        font-style: initial;
+        padding-bottom: 13px;
+    }
+    
+    elemento {
+        text-align: center;
+    }
+    
+    .leaflet-popup-content-wrapper,
+    .leaflet-popup-tip {
+        background: #ffffff;
+        color: #333;
+        box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+    
+    .b {
+        padding-left: 10px;
+    }
+    
+    .row-vent {
+        padding-top: 15px;
+    }
+    
+    #carusel {
+        border-radius: 5 rem;
+        height: 100%;
+        width: 100%;
+    }
