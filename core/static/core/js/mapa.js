@@ -51,7 +51,7 @@ let feature = L.geoJSON(areas, { style: myStyle }).bindPopup(function(layer) { r
 
 // Api base de datos
 const getPropiedad = async() => {
-    var token = 'Token f41af1f72e984914c2c0574ab4494bc687e822c9';
+    var token = 'Token 1c90143c185e46476faf6f0ba105590157eefb16';
     var myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');
     myHeaders.append('Authorization', token)
