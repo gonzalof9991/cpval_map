@@ -118,7 +118,7 @@ function marcarMapa(p) {
         precioT = precioT.split('[')[1];
         precioT = precioT.split(']')[0]; 
         Number(precioT);
-        console.log(precioT);
+        
     
         // Condicion para saber el tipo de propiedad 
         /* let tipoIcon = '';
