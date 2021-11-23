@@ -116,21 +116,10 @@ function marcarMapa(p) {
         let precioT;
         precioT = prop[i].resultado;
         console.log(precioT);
-       /*  precioT = precioT.split('[')[1];
-        precioT = precioT.split(']')[0]; */
+        precioT = precioT.split('[')[1];
+        precioT = precioT.split(']')[0]; 
         Number(precioT);
-        let precioCLP = 0;
-
-        const formatter = new Intl.NumberFormat('en-US', {
-            style: 'currency',
-            currency: 'USD',
-            minimumFractionDigits: 0
-        })
-
-        precioCLP = 30565 * Math.round(precioT);
-        formatter.format(precioCLP);
-
-
+    
         // Condicion para saber el tipo de propiedad 
         /* let tipoIcon = '';
         if (prop[i].tipo_propiedad == 0) {
