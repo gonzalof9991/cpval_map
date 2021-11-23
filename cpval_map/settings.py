@@ -116,12 +116,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
          # NOMBRE DE SU BASE DE DATOS
-        'NAME': 'd2nma4f43gk2ah',
+        'NAME': 'dbl80hvn3eovgl',
         # USUARIO DE SU BASE DE DATOS
-        'USER': 'oldnbpqiwvzsbo',
+        'USER': 'fwxegtaawncndb',
         # CONTRASEÑA DE SU USUARIO
-        'PASSWORD': '0680b3fb99e860df5e3286f80df402316ee7f824ab07a284f91075b72db3826c',
-        'HOST': 'ec2-18-234-15-247.compute-1.amazonaws.com',
+        'PASSWORD': '8cf8781cf95b5c6e7c88a154c1402f107deb9b7798cc2e0f4e732fb95aec47eb',
+        'HOST': 'ec2-3-212-55-200.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
